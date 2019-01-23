@@ -1,0 +1,21 @@
+Configure setup for Angular 7
+Download following to use Angular
+1- Node Js          (DOWNLOAD ==> https://nodejs.org/en/download/)
+2- npm               Automatically download with node js
+3- Angular CLI      (DOWNLOAD ==> https://cli.angular.io/)
+4- Any Text Editor we use visual studio (DOWNLAOD ==> https://visualstudio.microsoft.com/downloads/)
+
+***************************************************************************************************
+Setup:-
+After Download all above do follow below steps:
+1- open visual studio code and choose terminal
+2- Do type follow commands
+ng new vasuProject
+cd vasuProject
+ng serve
+
+After this you will get compile succesfull message on terminal now open web browser and type localhost:4200
+
+# For creating new component using angular CLI use command
+=============================================================
+ng g c vasuComponent
