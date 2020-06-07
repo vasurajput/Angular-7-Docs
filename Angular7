@@ -19,3 +19,43 @@ After this you will get compile succesfull message on terminal now open web brow
 # For creating new component using angular CLI use command
 =============================================================
 ng g c vasuComponent
+
+
+# ==========================  Create Table in Angular Js ================================================================
+1- GO to app.component.ts file and declare statis Array
+  headers = ["ID", "Name", "Age", "Gender", "Country"];
+  rows = [
+    {
+      "ID" : "1",
+      "Name" : "Rahul",
+      "Age" : "21",
+      "Gender" : "Male",
+      "Country" : "India"
+    },
+    {
+      "ID" : "2",
+      "Name" : "Ajay",
+      "Age" : "25",
+      "Gender" : "Male",
+      "Country" : "India"
+    }
+  ]
+}
+
+2- now go to app.component.html file and write below code
+<h1>My Table Example</h1>
+<hr>
+<table id="customers">
+  <tr>
+    <th *ngFor = "let column of headers">
+      {{column}}
+    </th>
+  </tr>
+  <tr *ngFor = "let row of rows">
+    <td *ngFor = "let column of headers">
+      {{row[column]}}
+    </td>
+  </tr>
+
+</table>
+=======================================================================================================================
